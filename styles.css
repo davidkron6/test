@@ -1,0 +1,98 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Comfortaa;
+}
+
+/* Navigation */
+nav {      /* vzhµad celého navigaèného panelu */
+  background-color: black;
+}
+
+nav ul {
+  width: 1020px; /* èastá hodnota ¹írky navigaèného panelu */
+  margin: 0px auto; /* zarovnanie polo¾iek zoznamu na horný okraj + auto ¹írka */
+}
+
+nav ul li {  /* úprava jednotlivých polo¾iek zoznamu */
+  width: 170px;  /* zabezpeèuje mezery medzi polo¾kami zoznamu */
+  list-style-type: none;  /* bez odrá¾ok */
+  float: left; /* polo¾ky zoznamu vedµa seba */
+  text-align: center;  /* zarovnanie textu do stredu */
+  line-height: 50px;
+  font-size: 20px;
+}
+
+nav ul li a {  /* vzhµad textu odkazu */
+  color: #EEEEEE;
+  text-decoration: none; /* bez podèiarknutia odkazu */
+}
+
+nav ul li a:hover {  /* èo sa vykoná, ak sa na to presunie kurzor my¹i */ 
+  border-bottom: 2px solid #DC5F00;
+}
+
+#logo {
+  display: block;  /* prepnutie obrázku do blokového elementu */
+  margin: 0px auto;
+  height: 50px;
+  width: auto;
+  top: 40px;
+}
+
+.clearfix::after {  /* vypnutie float-u */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Main */
+body {
+  background-color: #EEEEEE;
+  text-align: center;
+}
+
+main {
+  /* padding-left: 20px; */
+  position: center;
+}
+
+main h1, h3, p {
+  padding: 20px;
+  margin: 0px 0px;
+  /* padding-left: 20px; */
+}
+
+#our-products-header {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  /*justify-content: center;
+  align-content: center;
+  text-align: center; */
+} 
+
+/* #out-products-header h1 {
+  margin: 0px 0px;
+} */
+
+#our-products {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+#our-products img {
+  margin-top: 20px;
+  height: auto;
+  width: 400px;
+  display: block;
+}
+
+
+
+
